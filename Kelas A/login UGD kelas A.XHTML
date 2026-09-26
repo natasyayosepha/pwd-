@@ -2,33 +2,15 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
-<!-- Struktur utama XHTML -->
-
 <head>
-    <!-- Pengaturan karakter dan judul halaman -->
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Formulir Registrasi Data Mahasiswa</title>
 </head>
 <body>
-    <!-- Judul utama halaman -->
     <h1>Formulir Registrasi Data Mahasiswa</h1>
-
     <!-- Formulir untuk memasukkan data mahasiswa -->
     <form action="" method="post" enctype="multipart/form-data">
-
-        <!-- Tabel untuk mengatur susunan formulir -->
         <table cellspacing="4" cellpadding="4" border="1" style="border-collapse:collapse; width:100%;">
-
-            <!-- Input nomor mahasiswa -->
-            <tr>
-                <td>
-                    <label for="nomhs"><strong>Nomor Mahasiswa</strong>
-                    </label>
-                </td>
-                <td>
-                    <input type="text" id="nomhs" name="nomhs" size="30" />
-                </td>
-            </tr>
 
             <!-- Input nama mahasiswa -->
             <tr>
@@ -40,7 +22,6 @@
                     <input type="text" id="namamhs" name="namamhs" size="30" />
                 </td>
             </tr>
-
             <!-- Pilihan jenis kelamin menggunakan radio button -->
             <tr>
                 <td>
@@ -51,7 +32,6 @@
                     <input type="radio" id="perempuan" name="jk" value="Perempuan" /><label for="perempuan">Perempuan</label>
                 </td>
             </tr>
-
             <!-- Pilihan program studi menggunakan dropdown -->
             <tr>
                 <td>
@@ -66,7 +46,6 @@
                     </select>
                 </td>
             </tr>
-
             <!-- Input alamat email -->
             <tr>
                 <td>
@@ -77,7 +56,6 @@
                     <input type="text" id="email" name="email" size="30" />
                 </td>
             </tr>
-
             <!-- Input nomor telepon mahasiswa -->
             <tr>
                 <td>
@@ -88,7 +66,6 @@
                     <input type="text" id="telepon" name="telepon" size="30" />
                 </td>
             </tr>
-
             <!-- Input password -->
             <tr>
                 <td>
@@ -99,7 +76,6 @@
                     <input type="password" id="password" name="password" size="30" />
                 </td>
             </tr>
-
             <!-- Input file untuk foto mahasiswa -->
             <tr>
                 <td>
@@ -110,7 +86,6 @@
                     <input type="file" id="photo" name="photo" size="18" accept="image/gif, image/jpeg, image/png" />
                 </td>
             </tr>
-
             <!-- Input nama sekolah asal -->
             <tr>
                 <td>
@@ -121,81 +96,30 @@
                     <input type="text" id="namasmu" name="namasmu" size="30" />
                 </td>
             </tr>
-
-            <!-- Input alamat sekolah asal -->
-            <tr>
-                <td>
-                    <label for="alamatsmu"><strong>Alamat Sekolah Asal</strong>
-                    </label>
-                </td>
-                <td>
-                    <input type="text" id="alamatsmu" name="alamatsmu" size="30" />
-                </td>
-            </tr>
-
-            <!-- Input nomor telepon sekolah asal -->
-            <tr>
-                <td>
-                    <label for="teleponsmu"><strong>Telepon Sekolah Asal</strong>
-                    </label>
-                </td>
-                <td>
-                    <input type="text" id="teleponsmu" name="teleponsmu" size="30" />
-                </td>
-            </tr>
-
             <!-- Pilihan hal favorit -->
             <tr>
                 <td style="vertical-align: top;"><strong>Hal Favorit</strong>
                 </td>
-
                 <td>
                     <!-- Pilihan musik favorit -->
                     <p>
                         <strong>Musik</strong><br />
-                        <input type="checkbox" id="musik1"
-                               name="musik" value="Pop" />
+                        <input type="checkbox" id="musik1" name="musik" value="Pop" />
                         <label for="musik1">Pop</label>
-
-                        <input type="checkbox" id="musik2"
-                               name="musik" value="Rock" />
+                        <input type="checkbox" id="musik2" name="musik" value="Rock" />
                         <label for="musik2">Rock</label>
-
-                        <input type="checkbox" id="musik3"
-                               name="musik" value="Jazz" />
+                        <input type="checkbox" id="musik3" name="musik" value="Jazz" />
                         <label for="musik3">Jazz</label>
                     </p>
-
                     <!-- Pilihan film favorit -->
                     <p>
                         <strong>Film</strong><br />
-                        <input type="checkbox" id="film1"
-                               name="film" value="Drama" />
+                        <input type="checkbox" id="film1" name="film" value="Drama" />
                         <label for="film1">Drama</label>
-
-                        <input type="checkbox" id="film2"
-                               name="film" value="Action" />
+                        <input type="checkbox" id="film2" name="film" value="Action" />
                         <label for="film2">Action</label>
-
-                        <input type="checkbox" id="film3"
-                               name="film" value="Sci-Fi" />
+                        <input type="checkbox" id="film3" name="film" value="Sci-Fi" />
                         <label for="film3">Sci-Fi</label>
-                    </p>
-
-                    <!-- Pilihan makanan favorit -->
-                    <p>
-                        <strong>Makanan</strong><br />
-                        <input type="checkbox" id="makanan1"
-                               name="makanan" value="Seafood" />
-                        <label for="makanan1">Seafood</label>
-
-                        <input type="checkbox" id="makanan2"
-                               name="makanan" value="Tradisional" />
-                        <label for="makanan2">Tradisional</label>
-
-                        <input type="checkbox" id="makanan3"
-                               name="makanan" value="Fastfood" />
-                        <label for="makanan3">Fastfood</label>
                     </p>
                 </td>
             </tr>
@@ -208,8 +132,7 @@
                     </label>
                 </td>
                 <td>
-                    <textarea id="resume" name="resume"
-                              rows="10" cols="23"></textarea>
+                    <textarea id="resume" name="resume" rows="10" cols="23"></textarea>
                 </td>
             </tr>
 
@@ -224,3 +147,4 @@
     </form>
 </body>
 </html>
+
